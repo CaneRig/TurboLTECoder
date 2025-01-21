@@ -102,7 +102,7 @@ void _decoder_speed_body(int thread_count, size_t number, size_t bllen, const in
 **/
 template<class Decoder_>
 void TestSpeed(int block_size, size_t block_number_per_thread, int thread_count, bool use_priority, int iterations = 6) {
-	FunctionTimer<void, int, size_t, size_t, int> timer(std::string("Worker"), _decoder_speed_body<Decoder_>);
+	FunctionTimer<void, int, size_t, size_t, int, bool> timer(std::string("Worker"), _decoder_speed_body<Decoder_>);
 
 	timer.Invoke(thread_count, block_number_per_thread, block_size, iterations, use_priority);
 
