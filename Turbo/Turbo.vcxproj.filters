@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo">
+      <UniqueIdentifier>{bd20f9b2-c552-4dd6-879a-87fe7ae31bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo\Interleaver">
+      <UniqueIdentifier>{4d62b789-20c3-4d4b-93fa-2b888d3569a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Utility">
+      <UniqueIdentifier>{b37136ce-8204-40e3-8a2a-db54e9a35f34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo\Decoders">
+      <UniqueIdentifier>{fdf7e992-c98e-45e5-8f0f-98dbeef19fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo\Decoders\SIMD">
+      <UniqueIdentifier>{7c566b5a-9410-40c4-a8b7-8723edfa6fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Test">
+      <UniqueIdentifier>{0cac3213-e6aa-4493-a68a-d88cafa8d524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo\Decoders\SSE_Windowed">
+      <UniqueIdentifier>{793bb053-dfb2-4764-adb5-d3d345466d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Turbo\Decoders\AVX_Windowed">
+      <UniqueIdentifier>{0b6aca84-efca-4ece-98a7-c3f5f85c1d93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Turbo.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Turbo\Decoders\SSE_Windowed\SSE_Windowed.cpp">
+      <Filter>Файлы заголовков\Turbo\Decoders\SSE_Windowed</Filter>
+    </ClCompile>
+    <ClCompile Include="Turbo\Decoders\AVX_Windowed\AVX_Windowed.cpp">
+      <Filter>Файлы заголовков\Turbo\Decoders\AVX_Windowed</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Turbo\__turbo.h">
+      <Filter>Файлы заголовков\Turbo</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Coder.hpp">
+      <Filter>Файлы заголовков\Turbo</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Interleaver\Interleaver.hpp">
+      <Filter>Файлы заголовков\Turbo\Interleaver</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Timer.hpp">
+      <Filter>Файлы заголовков\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\SIMD\AVX.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\SIMD\SSE.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\SIMD</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoder.hpp">
+      <Filter>Файлы заголовков\Turbo</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\DecoderValidation.h">
+      <Filter>Файлы заголовков\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\SpeedTest.hpp">
+      <Filter>Файлы заголовков\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\SSE_Windowed\SSE_Windowed.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\SSE_Windowed</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\SSE_Windowed\sse_utility_win.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\SSE_Windowed</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\SysThreadUtility.h">
+      <Filter>Файлы заголовков\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\AVX_Windowed\AVX_Windowed.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\AVX_Windowed</Filter>
+    </ClInclude>
+    <ClInclude Include="Turbo\Decoders\AVX_Windowed\avx_utility_win.h">
+      <Filter>Файлы заголовков\Turbo\Decoders\AVX_Windowed</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
